@@ -1,5 +1,3 @@
-import kotlin.math.pow
-
 data class HCSolution(val vector: CoolVector, val value: Double)
 
 class HillClimber(
@@ -7,15 +5,14 @@ class HillClimber(
     private val fn: (CoolVector) -> Double
 ) {
     fun solve(nanoseconds: Long): HCSolution {
-        val possibleTimes = arrayOf(1000.0)
+        val possibleTimes = arrayOf(nanoseconds / 10000) //todo make it make sense
         val globalStart = System.nanoTime()
 
-        var current = CoolVector(arrayOf(-.5, -.5, -.5, -.5)).tweak(0.5)
+        var current = CoolVector(arrayOf(.0, .0, .0, .0)).tweak()
         var best = CoolVector(current.values.copyOf())
 
         while ((System.nanoTime() - globalStart) < nanoseconds) {
             val localStart = System.nanoTime()
-            if (localStart > globalStart + nanoseconds) break
 
             val time = try {
                 possibleTimes.filter { localStart + it < globalStart + nanoseconds }.random()
@@ -29,6 +26,7 @@ class HillClimber(
             }
 
             if (fn(current) < fn(best)) best = current
+            current = CoolVector(arrayOf(.0, .0, .0, .0)).tweak()
         }
 
         return HCSolution(best, fn(best))

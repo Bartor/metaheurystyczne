@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
 
     val time = args[0].toLong()
     val hc = when (args[1]) {
-        "0" -> HillClimber(0.1) { happyCat(it) }
+        "0" -> HillClimber(0.001) { happyCat(it) }
         "1" -> HillClimber(0.01) { griewank(it) }
         else -> error("Second argument should be 0 or 1")
     }
