@@ -36,7 +36,10 @@ class MazeMap(private val rows: Int, private val columns: Int) {
                 Moves.R -> currentCol++
             }
             when (getFieldSafe(currentRow, currentCol)) {
-                FieldType.WALL, FieldType.INVALID -> return PathEvaluation(state = PathState.BLOCKED, length = moves + 1)
+                FieldType.WALL, FieldType.INVALID -> return PathEvaluation(
+                    state = PathState.BLOCKED,
+                    length = moves + 1
+                )
                 FieldType.EXIT -> return PathEvaluation(state = PathState.WINNING, length = moves + 1)
             }
         }

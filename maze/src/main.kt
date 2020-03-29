@@ -9,7 +9,10 @@ fun main() {
         m.setRow(i, readLine()!!.split("").filter { it != "" }.map { it.toInt() }.toTypedArray())
     }
 
-    val ts = TabuSolver(m, 10000, 100)
+    val ts = TabuSolver(m, 64, 100)
     val naive = ts.naiveSolution()
-    println(ts.solve(time * 1000000000L, naive))
+    val best = ts.solve(time * 1000000000L, naive)
+
+    println(best.sequence.size)
+    System.err.println(best.sequence.joinToString(""))
 }
