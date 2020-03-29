@@ -1,4 +1,4 @@
-package tabuTSP
+package tabu
 
 import kotlin.random.Random
 
@@ -29,14 +29,12 @@ class Path(val cities: Array<Int>, private val distances: Distances) {
 
     private fun transpose(i: Int, j: Int) = Path(cities.copyOf().swap(i, j).toTypedArray(), distances)
 
-    private fun inverse(from: Int, to: Int): Path {
-        val inv = cities.slice(from..to).reversed()
-
-        return Path(
-            (cities.slice(0 until from) + inv + cities.slice(to + 1 until cities.size)).toTypedArray(),
-            distances
-        )
-    }
+    private fun inverse(from: Int, to: Int): Path = Path(
+        (cities.slice(0 until from) +
+                cities.slice(from..to).reversed() +
+                cities.slice(to + 1 until cities.size)).toTypedArray(),
+        distances
+    )
 
     override fun equals(other: Any?): Boolean {
         if (other !is Path) return false

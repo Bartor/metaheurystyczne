@@ -1,6 +1,5 @@
-import tabuTSP.Distances
-import tabuTSP.Path
-import tabuTSP.TabuTSP
+import tabu.Distances
+import tabu.TabuTSP
 
 fun main() {
     val (time, cities) = readLine()!!.split(' ').map { it.toInt() }

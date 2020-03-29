@@ -1,4 +1,4 @@
-package tabuTSP
+package tabu
 
 import java.util.*
 
@@ -18,6 +18,8 @@ class TabuTSP(
 
         var current = startingPath
         var best = Path(current.cities.copyOf(), distances)
+
+        queue.push(current)
 
         val startTime = System.nanoTime()
         while ((startTime + nanoseconds) > System.nanoTime()) {

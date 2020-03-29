@@ -1,4 +1,4 @@
-package tabuTSP
+package tabu
 
 class Distances(size: Int) {
     private val relations: Array<Array<Int>> = Array(size) { Array(size) { 0 } }
