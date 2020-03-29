@@ -1,7 +1,5 @@
 import map.MazeMap
-import tabu.Path
 import tabu.TabuSolver
-import tabu.enums.Moves
 
 fun main() {
     val (time, rows, columns) = readLine()!!.split(' ').map { it.toInt() }
@@ -11,6 +9,7 @@ fun main() {
         m.setRow(i, readLine()!!.split("").filter { it != "" }.map { it.toInt() }.toTypedArray())
     }
 
-    val ts = TabuSolver(m)
-    println(ts.naiveSolution())
+    val ts = TabuSolver(m, 10000, 100)
+    val naive = ts.naiveSolution()
+    println(ts.solve(time * 1000000000L, naive))
 }
