@@ -9,7 +9,7 @@ fun main() {
         d.setCity(i, readLine()!!.split(' ').map { it.toInt() }.toTypedArray())
     }
 
-    val tabu = TabuTSP(d, 1000, 10000)
+    val tabu = TabuTSP(d, cities * 10, cities * cities)
     val solution = tabu.solve(time * 1000000000L, d.naiveSolution())
     println(solution.length())
     System.err.println(solution)

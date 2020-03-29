@@ -22,7 +22,7 @@ class Path(val cities: Array<Int>, private val distances: Distances) {
         val j = Random.nextInt(distances.citiesCount)
 
         return when (Random.nextInt(4)) {
-            0, 1, 2 -> transpose(i, j)
+            0, 1, 2, 3 -> transpose(i, j) // yes this case is exhaustive, but getting rid of inverses help
             else -> inverse(i, j)
         }
     }
