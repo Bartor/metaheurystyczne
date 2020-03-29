@@ -9,12 +9,12 @@ fun main(args: Array<String>) {
 
     val time = args[0].toLong()
     val hc = when (args[1]) {
-        "0" -> HillClimber(0.001) { happyCat(it) }
-        "1" -> HillClimber(0.01) { griewank(it) }
+        "0" -> HillClimber(0.0001) { happyCat(it) }
+        "1" -> HillClimber(0.0001) { griewank(it) }
         else -> error("Second argument should be 0 or 1")
     }
 
-    val solution = hc.solve(time * 1000000000)
+    val solution = hc.solve(time * 1000000000, time * 10000000)
     println("${solution.vector} ${solution.value}")
 }
 
