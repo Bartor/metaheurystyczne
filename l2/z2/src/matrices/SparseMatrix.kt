@@ -1,13 +1,28 @@
 package matrices
 
 import java.lang.Exception
-import kotlin.math.pow
+import kotlin.random.Random
 
 class SparseMatrix(
     private val width: Int,
     private val height: Int
 ) : CoolMatrix {
-    private val representation: List<SparseBlock> = mutableListOf()
+    private val representation: MutableList<SparseBlock> = mutableListOf()
+
+    public fun addBlocks(vararg blocks: SparseBlock) {
+        this.representation.addAll(blocks)
+    }
+
+    // this is basically a one-liner which creates new SparseMatrix
+    // with a random block with value randomly changed
+    // god forgive me
+    fun randomizeBlockValueTweak() = SparseMatrix(width, height).apply {
+        addBlocks(*representation.apply {
+            Random.nextInt(representation.size).let {
+                set(it, get(it).copy().apply { value = SparseValues.available.random() })
+            }
+        }.toTypedArray())
+    }
 
     override fun distance(other: CoolMatrix): Double {
         var sum = 0.0
@@ -18,7 +33,7 @@ class SparseMatrix(
             }
         }
 
-        return 1.0 / (width * height) * sum
+        return sum / (width * height)
     }
 
     override fun getValue(row: Int, column: Int): Short {

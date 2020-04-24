@@ -5,5 +5,5 @@ data class SparseBlock(
     val column: Int,
     val width: Int,
     val height: Int,
-    val value: Short
+    var value: Short
 )

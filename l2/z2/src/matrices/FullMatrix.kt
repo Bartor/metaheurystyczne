@@ -1,13 +1,14 @@
 package matrices
 
 import java.lang.Exception
-import kotlin.math.pow
 
 class FullMatrix(
     private val width: Int,
-    private val height: Int
+    private val height: Int,
+    initZero: Boolean = false
 ) : CoolMatrix {
-    private val representation: Array<Array<Short>> = Array(width) { emptyArray() }
+    private val representation: Array<Array<Short>> =
+        Array(height) { if (initZero) Array(width) { 0.toShort() } else emptyArray() }
 
     public fun setRow(row: Int, values: Array<Short>) {
         if (values.size == width) representation[row] = values
@@ -20,7 +21,7 @@ class FullMatrix(
             sum += (representation[row][column] - other.getValue(row, column)).let { it * it }
         }
 
-        return 1.0 / (width + height) * sum
+        return sum / (width * height)
     }
 
     override fun getValue(row: Int, column: Int) = representation[row][column]
