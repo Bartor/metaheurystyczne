@@ -1,19 +1,22 @@
 import matrices.FullMatrix
-import matrices.SparseBlock
-import matrices.SparseMatrix
 
 fun main() {
-    val (time, height, width, blockSize) = readLine()!!.split(' ').map { it.toInt() }
-    val inputMatrix = FullMatrix(width, height)
-    for (row in 0 until height) {
-        inputMatrix.setRow(row, readLine()!!.split(' ').map { it.toShort() }.toTypedArray())
-    }
-    val zeroMatrix = FullMatrix(width, height, true)
-    val sparseZero = SparseMatrix(width, height).apply {
-        addBlock(SparseBlock(0, 0, width, height, 64))
+    val input = readLine()!!.split(' ').toMutableList()
+    val time = input.removeFirst().toDouble()
+    val (height, width, blockSize) = input.map { it.toInt() }
+    val inputMatrix = FullMatrix(width, height).apply {
+        for (row in 0 until height) setRow(row, readLine()!!.split(' ').map { it.toShort() }.toTypedArray())
     }
 
-    println(inputMatrix.distance(zeroMatrix))
-    println(sparseZero.distance(zeroMatrix))
-    println(sparseZero.distance(inputMatrix))
+    val randomSparse = BlockSparseMatrixFactory.getBlockSparseMatrix(height, width, blockSize)
+
+    val solution = SparseMatrixAnnealing { it.distance(inputMatrix) }.solve(
+        (time * 1e9).toLong(),
+        blockSize,
+        randomSparse,
+        200.0
+    ) { 0.5 * it }
+
+    println(solution.distance(inputMatrix))
+    System.err.println(solution)
 }
