@@ -24,12 +24,14 @@ class Path(val sequence: MutableList<Moves> = mutableListOf()) {
     )
 
     fun randomTweak(): Path {
-        val i = Random.nextInt(sequence.size)
-        val j = Random.nextInt(sequence.size)
+        var i = Random.nextInt(sequence.size)
+        var j = Random.nextInt(sequence.size)
+
+        if (i > j) i = j.also { j = i }
 
         return when (Random.nextInt(4)) {
             0, 1 -> transpose(i, j)
-            else -> inverse(j, i)
+            else -> inverse(i, j)
         }
     }
 
