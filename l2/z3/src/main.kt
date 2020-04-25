@@ -13,8 +13,6 @@ fun main() {
 
     val naive = solver.naiveSolution()
     val e = m.evaluatePath(naive)
-    println(e.state)
-    println(naive.sequence.size)
 
     val best = solver.solve(
         (time * 1000000000L),
