@@ -1,6 +1,6 @@
 const readLine = require('readline');
 
-const STOP_RATIO = 0.99;
+const STOP_RATIO = 0.5;
 const DEVIATION = 0.1;
 const TOURNAMENT = 5;
 const POPULATION = 20;
@@ -64,6 +64,7 @@ function geneticAlgorithm(x, maxTime, fitnessFn) {
     const startTime = process.hrtime();
     while (compareTime(maxTime, process.hrtime(startTime))) {
         i++;
+        let upJ = false;
         const fitnessArray = [];
         for (let p of population) {
             let f = fitnessFn(p);
@@ -77,8 +78,7 @@ function geneticAlgorithm(x, maxTime, fitnessFn) {
         }
         if (upJ) j++;
 
-        if (j !== i) console.log(j / i);
-        if ((j / i) < STOP_RATIO) break;
+        if (j / i < STOP_RATIO) break;
 
         const newPopulation = [];
         for (let i = 0; i < POPULATION / 2; i++) {
