@@ -2,8 +2,9 @@ const readline = require('readline');
 const fs = require('fs');
 
 const STOP_RATIO = 0.1;
-const TOURNAMENT = 5;
-const POPULATION = 20;
+const TOURNAMENT = 3;
+const POPULATION = 15;
+let ELITES = 2;
 
 Math.randInt = (max) => {
     return Math.floor(Math.random() * max);
@@ -45,6 +46,7 @@ rl.prompt();
 rl.on('line', line => {
     if (lineNo++ === 0) {
         [t, n, s] = line.split(' ').map(Number.parseFloat);
+        ELITES = s;
     } else if (lineNo < n + 2) {
         let [l, v] = line.split(' ');
         letters.get(l).value = Number.parseFloat(v);
@@ -72,31 +74,36 @@ function compareTime(a, b) {
 }
 
 function mutate(word) {
-    const availableLetters = shuffleArray(Object.keys(letters.dict));
-    const splitIndex = Math.randInt(word.length);
+    const wordLetters = word.split('');
+    const available = {};
+    for (let l in letters.dict) {
+        available[l] = letters.dict[l].number - wordLetters.filter(e => e === l).length
+    }
+    const entries = Object.entries(available);
+    const availableLetters = entries.filter(e => e[1] > 0).map(e => e[0]);
 
-    switch (Math.randInt(5)) {
-        case 0:
-            return word + availableLetters.filter(e => Math.random() < 0.15).join('');
-        case 1:
-            return word.split('').map(e => Math.random() < 0.15 ? availableLetters[Math.randInt(availableLetters.length)] : e).join('');
-        case 2:
-            return word.slice(splitIndex) + word.slice(0, splitIndex);
-        case 3:
-            return word.slice(0, splitIndex) + availableLetters.filter(e => Math.random() < 0.3).join('');
-        case 4:
-            return availableLetters.filter(e => Math.random() < 0.3).join('') + word.slice(splitIndex);
+    if (availableLetters.length === 0) {
+        return word;
+    } else {
+        const sliceIndex = Math.randInt(word.length);
+        const letter = shuffleArray(availableLetters).slice(Math.randInt(availableLetters.length)).join('');
+
+        if (Math.random() < 0.5) {
+            return word.slice(sliceIndex) + letter + word.slice(0, sliceIndex);
+        } else {
+            return word.slice(0, sliceIndex) + letter + word.slice(sliceIndex);
+        }
     }
 }
 
 function crossover(x1, x2) {
-    const [i1, i2] = [Math.randInt(x1.length), Math.randInt(x2.length)];
+    let startSlice = Math.randInt(Math.min(x1.length, x2.length));
+    let endSlice = Math.randInt(Math.min(x1.length, x2.length));
 
-    const [r1, r2] = [x1.slice(i1) + x2.slice(0, i2), x2.slice(i2) + x1.slice(0, i1)];
+    if (endSlice > startSlice)[endSlice, startSlice] = [startSlice, endSlice];
 
-    for (let i = 0; i < Math.min(r1.length, r2.length); i++) {
-        if (Math.random() < 0.15)[r1[i], r2[i]] = [r2[i], r1[i]];
-    }
+    const r1 = x1.slice(0, startSlice) + x2.slice(startSlice, endSlice) + x1.slice(endSlice);
+    const r2 = x2.slice(0, startSlice) + x1.slice(startSlice, endSlice) + x2.slice(endSlice);
 
     return [r1, r2];
 }
@@ -127,8 +134,9 @@ function geneticAlgorithm(population, maxTime, fitnessFn) {
 
         // if (j / i < STOP_RATIO) break;
 
-        const newPopulation = [];
-        for (let i = 0; i < POPULATION / 2; i++) {
+        let newPopulation = population.map((e, i) => [e, fitnessArray[i]]).sort((a, b) => b[1] - a[1]).map(e => e[0]).slice(0, ELITES);
+        newPopulation = newPopulation.filter((e, i) => newPopulation.indexOf(e) === i);
+        for (let i = 0; i < (POPULATION - ELITES) / 2; i++) {
             const a = population[selection(fitnessArray)];
             const b = population[selection(fitnessArray)];
 
@@ -146,20 +154,21 @@ function fitness(word) {
     }));
     let points = 0;
 
-    if (!dict.includes(word)) return 0; 
-
     for (let letter of word) {
         const letterInfo = letters.get(letter);
         const currentInfo = lettersUsed.get(letter);
 
-        if (letterInfo.number === 0) return 0;
-        if (++currentInfo.times > letterInfo.number) return 0;
+        if (letterInfo.number === 0 || ++currentInfo.times > letterInfo.number) {
+            points += letterInfo.number - currentInfo.times * letterInfo.value;
+        }
         points += letterInfo.value;
     }
-    return points;
+
+    return dict.includes(word) ? points > 0 ? points : -1 / points : points > 0 ? 1 / points : -1 / points;
 }
 
 function main() {
     const result = geneticAlgorithm(initialPopulation, [t, (t * 1e9) % 1e9], fitness);
-    console.log(result);
+    console.log(fitness(result));
+    process.stderr.write(result);
 }
