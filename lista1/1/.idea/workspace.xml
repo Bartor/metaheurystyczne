@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b338cb6a-8620-461e-8b67-1dcc70c4f951" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Documents\metaheurystyczne\lista1\1kotlin\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zl4vrNxPsq3CdhvrICnrYCmUsV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Kotlin.15 - 1">
+    <configuration name="15 - 0" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="1kotlin" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="15 0" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="15 - 1" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="1kotlin" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="15 1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="5 - 0" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true">
+      <module name="1kotlin" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="5 0" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="5 - 1" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="1kotlin" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="5 1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.5 - 1" />
+      <item itemvalue="Kotlin.15 - 0" />
+      <item itemvalue="Kotlin.15 - 1" />
+      <item itemvalue="Kotlin.5 - 0" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.5 - 0" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b338cb6a-8620-461e-8b67-1dcc70c4f951" name="Default Changelist" comment="" />
+      <created>1585398697217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585398697217</updated>
+      <workItem from="1585398700847" duration="205000" />
+      <workItem from="1585399065599" duration="653000" />
+      <workItem from="1585399737008" duration="692000" />
+      <workItem from="1585400586629" duration="31000" />
+      <workItem from="1585400640875" duration="8912000" />
+      <workItem from="1585515240529" duration="683000" />
+      <workItem from="1585554656930" duration="6000" />
+    </task>
+    <task id="LOCAL-00001" summary="początki listy pierwszej">
+      <created>1585408455085</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585408455085</updated>
+    </task>
+    <task id="LOCAL-00002" summary="drobne poprawki w pierwszym">
+      <created>1585409512455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585409512455</updated>
+    </task>
+    <task id="LOCAL-00003" summary="jakieśtampoprawki w pierwszym">
+      <created>1585515882275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585515882275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="początki listy pierwszej" />
+    <MESSAGE value="drobne poprawki w pierwszym" />
+    <MESSAGE value="jakieśtampoprawki w pierwszym" />
+    <option name="LAST_COMMIT_MESSAGE" value="jakieśtampoprawki w pierwszym" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585405930383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585405930383" />
+    <state x="621" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585403149901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585403149901" />
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1585515881418">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515881418" />
+    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1585515916440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="261" key="FileChooserDialogImpl/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515916440" />
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1585515923343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923343" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1585515923343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.center/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923343" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1585515923343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.left/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923343" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1585515923343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="310" key="GridCell.Tab.0.right/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923343" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1585515923341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923341" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1585515923341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.center/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923341" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1585515923341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.left/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923341" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1585515923341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="326" key="GridCell.Tab.1.right/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515923341" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1585400616355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585400616355" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1585515884594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515884594" />
+    <state x="767" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585405465116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="767" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585405465116" />
+    <state x="342" y="244" key="new project wizard" timestamp="1585409559862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="244" key="new project wizard/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585409559862" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

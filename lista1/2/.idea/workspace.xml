@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c656ac1c-ec2a-45c5-9d14-00af13f65f33" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Documents\metaheurystyczne\lista1\2\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZlNCYrpxSPjstwV2HWNtO4pnb8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="TabuTSP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\metaheurystyczne\lista1\2" />
+      <recent name="D:\Documents\metaheurystyczne\lista1\2\src\test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c656ac1c-ec2a-45c5-9d14-00af13f65f33" name="Default Changelist" comment="" />
+      <created>1585409593954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585409593954</updated>
+      <workItem from="1585409596386" duration="8870000" />
+      <workItem from="1585477589887" duration="29000" />
+      <workItem from="1585493809411" duration="297000" />
+      <workItem from="1585513783474" duration="1427000" />
+    </task>
+    <task id="LOCAL-00001" summary="cośtam trochę drugie zadanie chyba xDDD">
+      <created>1585420174607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585420174608</updated>
+    </task>
+    <task id="LOCAL-00002" summary="poprawki w drugim">
+      <created>1585494003626</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585494003626</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cośtampoprawki w drugim">
+      <created>1585515206266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585515206266</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cośtam trochę drugie zadanie chyba xDDD" />
+    <MESSAGE value="poprawki w drugim" />
+    <MESSAGE value="cośtampoprawki w drugim" />
+    <option name="LAST_COMMIT_MESSAGE" value="cośtampoprawki w drugim" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="30" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1585413711287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="30" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585413711287" />
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1585515205271">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515205271" />
+    <state x="739" y="261" key="FileChooserDialogImpl" timestamp="1585477614294">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="261" key="FileChooserDialogImpl/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585477614294" />
+    <state width="1877" height="251" key="GridCell.Tab.0.bottom" timestamp="1585515211739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.bottom/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515211739" />
+    <state width="1877" height="251" key="GridCell.Tab.0.center" timestamp="1585515211739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.center/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515211739" />
+    <state width="1877" height="251" key="GridCell.Tab.0.left" timestamp="1585515211739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.left/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515211739" />
+    <state width="1877" height="251" key="GridCell.Tab.0.right" timestamp="1585515211739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.0.right/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515211739" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1585515209125">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585515209125" />
+    <state x="677" y="293" key="git4idea.merge.GitPullDialog" timestamp="1585513787024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="293" key="git4idea.merge.GitPullDialog/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585513787024" />
+    <state x="342" y="244" key="new project wizard" timestamp="1585477616576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="244" key="new project wizard/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585477616576" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1585418935852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/1920.0.1920.1040/-2560.0.2560.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585418935852" />
+  </component>
+</project>
