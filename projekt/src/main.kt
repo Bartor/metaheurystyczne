@@ -1,5 +1,6 @@
 import map.MazeMap
 import solver.Path
+import solver.SimulatedAnnealing
 import solver.enums.Moves
 
 fun main() {
@@ -20,6 +21,14 @@ fun main() {
         }
     })
 
-    val eval = m.evaluatePath(initialPath)
-    print(eval)
+    val sa = SimulatedAnnealing(m)
+    val solution = sa.solve(
+        time * 1000000000L,
+        initialPath,
+        200.0
+    ) {
+        0.8 * it
+    }
+
+    print(solution)
 }
