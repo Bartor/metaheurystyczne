@@ -24,11 +24,12 @@ fun main() {
     val sa = SimulatedAnnealing(m)
     val solution = sa.solve(
         time * 1000000000L,
+        0.999999999,
         initialPath,
         200.0
     ) {
-        0.8 * it
+        0.999 * it
     }
 
-    print(solution)
+    print("${solution.sequence.size} $solution")
 }

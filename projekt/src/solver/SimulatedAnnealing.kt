@@ -3,7 +3,6 @@ package solver
 import map.MazeMap
 import solver.enums.Moves
 import kotlin.math.exp
-import kotlin.math.log10
 import kotlin.random.Random
 
 class SimulatedAnnealing(
@@ -11,12 +10,13 @@ class SimulatedAnnealing(
 ) {
     public fun solve(
         time: Long,
+        threshold: Double,
         initialSolution: Path,
         initialTemperature: Double,
         temperatureChanger: (Double) -> Double
     ): Path {
         val start = System.nanoTime()
-        var lastGood = System.nanoTime()
+        var lastBest = System.currentTimeMillis()
 
         var best = map.evaluatePath(initialSolution)
         var current = map.evaluatePath(initialSolution)
@@ -35,13 +35,10 @@ class SimulatedAnnealing(
             temperature = temperatureChanger(temperature)
             if (current.sequence.isNotEmpty() && current.sequence.size < best.sequence.size) {
                 best = current
-                lastGood = System.nanoTime()
-                println("Found better solution (${best.sequence.size}): $best")
+                lastBest = System.currentTimeMillis()
             }
 
-            if (System.nanoTime() > lastGood + log10(time.toDouble())) {
-                //break
-            }
+            if (lastBest.toDouble() / System.currentTimeMillis() < threshold) break
         }
 
         val cleanedBest = mutableListOf<Moves>()
