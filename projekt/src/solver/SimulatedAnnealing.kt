@@ -10,13 +10,15 @@ class SimulatedAnnealing(
 ) {
     public fun solve(
         time: Long,
-        threshold: Double,
+        timeout: Double,
         initialSolution: Path,
         initialTemperature: Double,
         temperatureChanger: (Double) -> Double
     ): Path {
         val start = System.nanoTime()
-        var lastBest = System.currentTimeMillis()
+        var lastBest = System.nanoTime() / 1e9
+
+        println(timeout)
 
         var best = map.evaluatePath(initialSolution)
         var current = map.evaluatePath(initialSolution)
@@ -35,10 +37,11 @@ class SimulatedAnnealing(
             temperature = temperatureChanger(temperature)
             if (current.sequence.isNotEmpty() && current.sequence.size < best.sequence.size) {
                 best = current
-                lastBest = System.currentTimeMillis()
+                lastBest = System.nanoTime() / 1e9
+//                println("(${best.sequence.size}) - $best")
             }
 
-            if (lastBest.toDouble() / System.currentTimeMillis() < threshold) break
+            if (System.nanoTime() / 1e9 - lastBest > timeout) break
         }
 
         val cleanedBest = mutableListOf<Moves>()

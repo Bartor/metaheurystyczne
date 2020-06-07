@@ -2,6 +2,8 @@ import map.MazeMap
 import solver.Path
 import solver.SimulatedAnnealing
 import solver.enums.Moves
+import kotlin.math.log10
+import kotlin.math.min
 
 fun main() {
     val (time, rows, columns) = readLine()!!.split(' ').map { it.toInt() }
@@ -24,7 +26,7 @@ fun main() {
     val sa = SimulatedAnnealing(m)
     val solution = sa.solve(
         time * 1000000000L,
-        0.999999999,
+        min(log10((time).toDouble()), log10(rows * columns / 10.0)),
         initialPath,
         200.0
     ) {
