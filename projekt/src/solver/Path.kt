@@ -46,11 +46,11 @@ class Path(val sequence: List<Moves> = emptyList()) {
 
         if (i > j) i = j.also { j = i }
 
-        return when (Random.nextInt(5)) {
+        return when (Random.nextInt(3)) {
             0 -> transpose(i, j)
             1 -> inverse(i, j)
-            2 -> repeat(j, (j / 10.0).toInt())
-            3 -> insertMove(j, (j / 10.0).toInt())
+//            2 -> repeat(j, (j / 10.0).toInt())
+//            3 -> insertMove(j, (j / 10.0).toInt())
             else -> extend(j, (j / 5.0).toInt())
         }
     }
