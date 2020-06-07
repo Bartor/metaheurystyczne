@@ -33,5 +33,6 @@ fun main() {
         0.999 * it
     }
 
-    print("${solution.sequence.size} $solution")
+    println("${solution.sequence.size}")
+    System.err.println(solution.sequence.joinToString(""))
 }

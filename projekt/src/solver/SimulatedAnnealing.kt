@@ -18,8 +18,6 @@ class SimulatedAnnealing(
         val start = System.nanoTime()
         var lastBest = System.nanoTime() / 1e9
 
-        println(timeout)
-
         var best = map.evaluatePath(initialSolution)
         var current = map.evaluatePath(initialSolution)
         var temperature = initialTemperature
@@ -38,7 +36,6 @@ class SimulatedAnnealing(
             if (current.sequence.isNotEmpty() && current.sequence.size < best.sequence.size) {
                 best = current
                 lastBest = System.nanoTime() / 1e9
-//                println("(${best.sequence.size}) - $best")
             }
 
             if (System.nanoTime() / 1e9 - lastBest > timeout) break
